@@ -1,3 +1,5 @@
+
+   
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Postagem } from 'src/app/model/Postagem';
@@ -72,6 +74,3 @@ export class PostagemEditComponent implements OnInit {
   }
 
 }
-
-
-

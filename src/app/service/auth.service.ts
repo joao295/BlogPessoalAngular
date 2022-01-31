@@ -30,12 +30,20 @@ cadastrar(user: User):Observable<User>{
   return this.http.post<User>('https://joaoalmeida.herokuapp.com/usuarios/cadastrar',user)
 }
 
+atualizar(user :User):Observable<User>{
+  return this.http.put<User>('https://joaoalmeida.herokuapp.com/usuarios/atualizar',user)
+}
+
+
+
 logado(){
   let ok: boolean = false
 
-  if(environment.token != ''){
-    ok = true 
+  if (environment.token != ''){
+    ok = true
   }
+
   return ok
 }
+
 }
